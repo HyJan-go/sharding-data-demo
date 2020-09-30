@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.db.sharingjdbcdemo.mapper.UserMapper">
+  <resultMap id="BaseResultMap" type="com.db.sharingjdbcdemo.domain.User">
+    <!--@mbg.generated-->
+    <!--@Table `user`-->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="nick_name" jdbcType="VARCHAR" property="nickName" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="come_time" jdbcType="TIMESTAMP" property="comeTime" />
+    <result column="college_id" jdbcType="INTEGER" property="collegeId" />
+    <result column="user_status" jdbcType="TINYINT" property="userStatus" />
+    <result column="user_class" jdbcType="VARCHAR" property="userClass" />
+    <result column="email" jdbcType="VARCHAR" property="email" />
+    <result column="phone" jdbcType="VARCHAR" property="phone" />
+    <result column="avatar" jdbcType="VARCHAR" property="avatar" />
+    <result column="profile" jdbcType="VARCHAR" property="profile" />
+    <result column="identify" jdbcType="TINYINT" property="identify" />
+    <result column="is_first_login" jdbcType="TINYINT" property="isFirstLogin" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, `name`, nick_name, `password`, come_time, college_id, user_status, user_class, 
+    email, phone, avatar, profile, identify, is_first_login
+  </sql>
+</mapper>

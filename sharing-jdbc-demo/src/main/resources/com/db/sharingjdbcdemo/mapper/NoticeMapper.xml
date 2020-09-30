@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.db.sharingjdbcdemo.mapper.NoticeMapper">
+  <resultMap id="BaseResultMap" type="com.db.sharingjdbcdemo.domain.Notice">
+    <!--@mbg.generated-->
+    <!--@Table notice-->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="admin_id" jdbcType="INTEGER" property="adminId" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="content" jdbcType="LONGVARCHAR" property="content" />
+    <result column="send_time" jdbcType="TIMESTAMP" property="sendTime" />
+    <result column="look_num" jdbcType="INTEGER" property="lookNum" />
+    <result column="enclosure_name" jdbcType="VARCHAR" property="enclosureName" />
+    <result column="enclosure_addr" jdbcType="VARCHAR" property="enclosureAddr" />
+    <result column="picture_addr" jdbcType="VARCHAR" property="pictureAddr" />
+    <result column="heat" jdbcType="INTEGER" property="heat" />
+    <result column="notice_status" jdbcType="TINYINT" property="noticeStatus" />
+    <result column="is_email" jdbcType="TINYINT" property="isEmail" />
+    <result column="category_id" jdbcType="INTEGER" property="categoryId" />
+    <result column="category_name" jdbcType="VARCHAR" property="categoryName" />
+    <result column="college_id" jdbcType="INTEGER" property="collegeId" />
+    <result column="college_name" jdbcType="VARCHAR" property="collegeName" />
+    <result column="content_text" jdbcType="LONGVARCHAR" property="contentText" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, admin_id, title, content, send_time, look_num, enclosure_name, enclosure_addr, 
+    picture_addr, heat, notice_status, is_email, category_id, category_name, college_id, 
+    college_name, content_text
+  </sql>
+</mapper>
